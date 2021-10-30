@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ALWebDev">
+    <meta name="description" content="Classic Hangman game">
+    <meta name="keywords" content="hangman, game, web">
+    <link rel="stylesheet" href="hangman-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Hangman Game - Portfolio Project</title>
+</head>
+<body>
+    <h1>Hangman Game - Portfolio Project</h1>
+    <div class="flex-container">
+        <canvas></canvas>
+        <div class="selection">
+            <h3>Select a Theme For Your Game</h3>
+            <select id="selection">
+                <option value="auto-select">Auto-Select</option>
+                <option value="countries">Countries</option>
+                <option value="sports">Sports</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="food">Food</option>
+            </select>
+            <button id="generate-btn" class="btn">Generate</button>
+            <div id="interaction">
+                <input type="text" id="letter" placeholder="Letter">
+                <button id="guess-btn" class="btn">Guess</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal">
+        <div id="modal-container">
+            <p id="message"></p>
+            <button id="play_again">Play Again</button>
+        </div>
+    </div>
+
+    <div id="not-available">
+        <p>The app is designed only for desktop</p>
+    </div>
+
+    <script src="hangman-script.js"></script>
+</body>
+</html>
